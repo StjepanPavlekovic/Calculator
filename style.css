@@ -1,0 +1,105 @@
+:root {
+    --dark: #393646;
+    --primary: #4f4557;
+    --lighter: #6d5d6e;
+    --secondary: #f4eee0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.calculator {
+    min-width: 350px;
+    background-color: var(--primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 3px;
+}
+
+.row {
+    min-height: 60px;
+    flex: 1 1 auto;
+    display: flex;
+    width: 100%;
+    gap: 3px;
+}
+
+.display {
+    display: flex;
+    flex: 1 1 auto;
+    background-color: var(--secondary);
+    font-weight: bolder;
+    padding: 15px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 32px;
+    /* border: 2px solid var(--dark); */
+}
+
+button {
+    outline: none;
+    border: none;
+    flex: 1 1 100%;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.ac {
+    background-color: rgb(50, 241, 194) !important;
+}
+
+.ac:hover {
+    background-color: rgb(43, 212, 170) !important;
+}
+
+.operation {
+    background-color: rgb(255, 149, 0);
+    color: white;
+}
+
+.operation:hover {
+    background-color: rgb(218, 129, 4);
+}
+
+.btn-large {
+    flex: 1 1 205%;
+}
+
+.credits {
+    color: var(--secondary);
+    opacity: 0.3;
+    font-size: 11px;
+    margin-top: 15px;
+    transition: 0.1s ease-in;
+    text-decoration: none;
+}
+
+.credits:visited {
+    color: var(--secondary);
+}
+
+.credits:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator9000</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="row">
+                <span id="result" class="display">0</span>
+            </div>
+
+            <div class="row">
+                <button onclick="allClear()" class="ac operation">A/C</button>
+                <button onclick="handleOperation(5)" class="operation">-/+</button>
+                <button onclick="handleOperation(2)" class="operation">/</button>
+                <button class="operation" onclick="backspace()"><span class="material-symbols-outlined" style="font-size: 36px; font-weight: bold; line-height: 100%; display: block;">
+                    backspace
+                    </span></button>
+            </div>
+
+            <div class="row">
+                <button onclick="enterDigit(7)">7</button>
+                <button onclick="enterDigit(8)">8</button>
+                <button onclick="enterDigit(9)">9</button>
+                <button onclick="handleOperation(1)" class=" operation">x</button>
+            </div>
+
+            <div class="row">
+                <button onclick="enterDigit(4)">4</buttonclass=>
+                <button onclick="enterDigit(5)">5</button>
+                <button onclick="enterDigit(6)">6</button>
+                <button onclick="handleOperation(3)" class="operation">+</button>
+            </div>
+
+            <div class="row">
+                <button onclick="enterDigit(1)">1</buttons=>
+                <button onclick="enterDigit(2)">2</button>
+                <button onclick="enterDigit(3)">3</button>
+                <button onclick="handleOperation(4)" class="operation">-</button>
+            </div>
+
+            <div class="row">
+                <button onclick="enterDigit(0)" class="btn-large">0</button>
+                <button onclick="enterDigit('.')">.</button>
+                <button onclick="handleOperation(6)" class="operation">=</button>
+            </div>
+            <a href="https://github.com/StjepanPavlekovic" target="_blank" class="credits"> Pavlek | TheOdinProject</a>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
